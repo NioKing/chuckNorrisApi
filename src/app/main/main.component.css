@@ -1,0 +1,66 @@
+.container {
+  display: block;
+  margin: 50px auto;
+  width: 70%;
+  border-radius: 20px;
+}
+
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  margin-left: 10px;
+}
+
+.category {
+  margin: 20px auto;
+  
+}
+
+mat-chip-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.jokes-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+
+mat-form-field {
+  width: 70%;
+}
+
+mat-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.jokes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+mat-list-item {
+  margin: 20px auto;
+}
+

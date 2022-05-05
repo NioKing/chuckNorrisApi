@@ -1,0 +1,29 @@
+<div class="container">
+    <mat-card class="container">
+        <div class="input-box">
+                <mat-form-field appearance="fill">
+                    <mat-label>Search for a joke</mat-label>
+                    <input type="text" matInput placeholder="Enter a search param" #searchTerm>
+                </mat-form-field>
+                <div class="btn">
+                    <button mat-raised-button color="primary" (click)="getSearchJokes(searchTerm.value)">Search</button>
+                    <button mat-raised-button color="accent" (click)="getRandomJoke()">Random</button>
+                    <button mat-raised-button color="warn" (click)="clearJokesList()">Clear</button>
+                </div>
+        </div>
+        <div class="category">
+            <mat-card>
+                <mat-chip-list *ngFor="let category of categories">
+                    <mat-chip (click)="getJokeByCategory(category)">{{ category }}</mat-chip>
+                </mat-chip-list>
+            </mat-card>
+        </div>
+        <div class="jokes-list">
+            <mat-card class="jokes">
+                <mat-list *ngFor="let joke of Jokes">
+                    <mat-list-item>{{joke.value}}</mat-list-item>
+                </mat-list>
+            </mat-card>
+        </div>
+    </mat-card>
+</div>
