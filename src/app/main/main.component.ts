@@ -61,6 +61,6 @@ export class MainComponent implements OnInit {
     this.DataService.getSearchJokes(searchTerm)
     .subscribe((jokes: any) => {
       this.Jokes = jokes.result
-    })} searchTerm = ''
+    })}
   }
 }
